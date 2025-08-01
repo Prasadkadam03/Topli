@@ -1,0 +1,62 @@
+
+@media (max-width:900px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .value {
+        flex-direction: column;
+    }
+
+    .solution {
+        flex-direction: column;
+    }
+}
+
+
+
+/* For smaller screens, use full-width without padding */
+@media (min-width: 1500px) {
+    .navbar,
+    .body,
+    .container,
+    .section,
+    .hero,
+    .approvals,
+    .solution,
+    .value,
+    .fun-facts,
+    .about,
+    .testimonials,
+    .loan-steps {
+        max-width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-img {
+        order: -1;
+        margin-bottom: 30px;
+    }
+
+    .nav {
+        display: block;
+        text-align: center;
+    }
+
+    .nav-item {
+        margin: 8px 0;
+    }
+}
