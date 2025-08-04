@@ -189,6 +189,10 @@ a {
     position: relative;
 }
 
+
+/* ========================
+   Fun Facts
+=========================== */
 /* ========================
    Fun Facts
 =========================== */
@@ -198,18 +202,27 @@ a {
     align-items: center;
     text-align: center;
     padding: 40px 0;
+    flex-wrap: wrap;
+    gap: 24px;
 }
 
 .fact {
     flex: 1;
+    min-width: 120px;
     color: #111;
 }
 
 .counter {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 700;
     color: #e53935;
-    /* Red color */
+}
+
+.percent-symbol {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #e53935;
+    margin-left: 2px;
 }
 
 .divider {
@@ -218,41 +231,86 @@ a {
     background: #ddd;
 }
 
+.fun-facts h3 {
+    font-size: 1.25rem;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+
+
 
 /* ========================
    Tabs Section
 =========================== */
-.tabs {
-    margin-top: 16px;
+/* Section base */
+.services-tabs-section {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+/* Tabs */
+.tabs-wrapper {
+    margin-bottom: 60px;
 }
 
 .tabs-nav {
     display: flex;
-    gap: 8px;
     flex-wrap: wrap;
-    margin-bottom: 12px;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 30px;
 }
 
 .tab-btn {
-    padding: 8px 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 12px 24px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #333;
     cursor: pointer;
-    background: #f9f9f9;
+    border-radius: 6px;
+    transition: all 0.3s;
+    font-weight: 600;
 }
 
-.tab-btn.active {
-    background: var(--red);
+.tab-btn.active,
+.tab-btn:hover {
+    background-color: #e53935;
     color: #fff;
-    border-color: var(--red);
+    border-color: #e53935;
 }
 
 .tab-content {
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    padding: 20px;
-    background: #fff;
+    text-align: center;
+    margin: 0 auto;
 }
+
+.tab-pane {
+    display: none;
+    text-align: left;
+}
+
+.tab-pane.active {
+    display: block;
+}
+.tab-pane ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.tab-pane ul li {
+    color: #111; /* Text color */
+    font-size: 1.1rem;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.tab-pane ul li::marker {
+    color: #e53935; /* 🔴 Red bullet */
+    font-size: 1.4rem; /* Bigger bullet */
+}
+
+
 
 /* ========================
    Solution Section
@@ -276,17 +334,58 @@ a {
 /* ========================
    Value Section
 =========================== */
-.value {
+
+/* Value Section */
+.value-section {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
     align-items: center;
-    margin-top: 20px;
+    gap: 30px;
 }
 
-.value img {
+.value {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.value-img {
+    min-width: 50%;
     max-width: 100%;
-    border-radius: 8px;
+    height: auto;
+}
+
+.value-img img {
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+.value-content {
+    flex: 1;
+    min-width: 280px;
+}
+
+.value-content span {
+    display: block;
+    color: #e53935;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.value-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.value-content p {
+    margin-bottom: 15px;
+}
+
+.value-content ul {
+    list-style: disc inside;
+    padding-left: 0;
+    color: #444;
 }
 
 /* ========================
