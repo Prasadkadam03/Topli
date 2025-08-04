@@ -1,0 +1,70 @@
+.red-box {
+    background-color: #e53e3e;
+    color: white;
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.loan-step {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.step-number {
+    width: 36px;
+    height: 36px;
+    background: #e53e3e;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.loan-rate-form {
+    background-color: #e53e3e;
+    border-radius: 12px;
+    padding: 2rem;
+}
+
+.loan-rate-form input,
+.loan-rate-form select {
+    background: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.loan-rate-form input::placeholder {
+    color: #aaa;
+}
+
+.loan-section {
+    padding: 80px 0;
+}
+
+.feature-icon {
+    font-size: 24px;
+    color: #e53e3e;
+}
+
+.form-section {
+    background: #f8f9fa;
+    padding: 80px 0;
+}
+
+/* Red box form (right side) styling */
+.bg-danger .form-label {
+    color: white;
+}
+
+.bg-danger .form-control {
+    border: none;
+    border-radius: 8px;
+}
+
+.bg-danger .form-control::placeholder {
+    color: #f8dcdc;
+}
