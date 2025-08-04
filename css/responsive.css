@@ -1,36 +1,28 @@
-@media (max-width:900px) {
-    .hero {
-        flex-direction: column;
+/* ===============================
+   Base Styles (Shared)
+================================== */
+@media (min-width: 768px) {
+    .custom-border-dark {
+        border-right: 1px solid #222 !important;
     }
 
-    .about {
-        flex-direction: column;
+    .approvals {
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
-    .value {
-        flex-direction: column;
-    }
-
-    .solution {
-        flex-direction: column;
-    }
-
-    .logo {
-        width: 100%;
-        height: auto;
-        text-align: center;
-    }
-
-    .fun-facts {
+    .tab-content {
         display: flex;
-        justify-content: space-between;
-
+        justify-content: center;
     }
 }
 
+@media (min-width: 992px) {
+    .display-5 {
+        font-size: 3.25rem;
+    }
+}
 
-
-/* For smaller screens, use full-width without padding */
 @media (min-width: 1500px) {
 
     .navbar,
@@ -51,10 +43,42 @@
 }
 
 
+/* ===============================
+   Medium Screens (max-width: 991.98px)
+================================== */
+@media (max-width: 991.98px) {
+    .blog-section {
+        padding-bottom: 120px;
+    }
+
+    .blog-spacer {
+        height: 10px;
+    }
+}
+
+
+/* ===============================
+   Small Screens (max-width: 900px)
+================================== */
 @media (max-width: 900px) {
-    .hero {
+
+    .hero,
+    .about,
+    .value,
+    .solution {
         flex-direction: column;
         text-align: center;
+    }
+
+    .logo {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .fun-facts {
+        display: flex;
+        justify-content: space-between;
     }
 
     .hero-img {
@@ -72,36 +96,40 @@
     }
 }
 
-@media (min-width: 992px) {
-    .display-5 {
-        font-size: 3.25rem;
+
+/* ===============================
+   Small Screens (max-width: 768px)
+================================== */
+@media (max-width: 768px) {
+    .fun-facts {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .about img {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .img-fluid {
+        max-width: 85%;
+        height: auto;
+    }
+
+    .loan-block-container {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
 
-
-@media (min-width: 768px) {
-    .custom-border-dark {
-        border-right: 1px solid #222 !important;
-    }
-
-    .approvals {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-}
-
-/* ===== Responsive Adjustments ===== */
-@media (max-width: 991.98px) {
-    .blog-section {
-        padding-bottom: 120px;
-    }
-
-    .blog-spacer {
-        height: 10px;
-    }
-}
-
+/* ===============================
+   Extra Small Screens (max-width: 767.98px)
+================================== */
 @media (max-width: 767.98px) {
     .blog-section {
         padding-top: 40px;
@@ -119,9 +147,7 @@
     .blog-post-title {
         font-size: 1rem;
     }
-}
 
-@media (max-width: 767.98px) {
     .step-number {
         left: -38px;
     }
@@ -141,35 +167,5 @@
 
     .loan-rate-form h3 {
         font-size: 1.3rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .loan-block-container {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    .fun-facts {
-        flex-direction: column;
-        gap: 32px;
-    }
-
-    .divider {
-        display: none;
-    }
-    .about img {
-    max-width: 90%;
-    height: auto;
-}
-
-}
-
-@media (min-width: 768px) {
-    .tab-content {
-        display: flex;
-        justify-content: center;
     }
 }

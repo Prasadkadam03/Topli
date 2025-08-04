@@ -46,7 +46,10 @@ a {
 .display-5 {
     font-size: 4rem;
 }
-
+ .img-fluid {
+    max-width: 110%;
+    height: auto;
+}
 
 
 .btn-primary {
@@ -488,7 +491,7 @@ a {
     left: 16px;
     width: 2px;
     height: 100%;
-    background-color: #dc3545;
+    background-color: rgb(231, 60, 62);
     z-index: 0;
 }
 
