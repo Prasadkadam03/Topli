@@ -324,146 +324,318 @@ a {
 }
 
 /* ========================
-   Loan Steps
+   loans and calculator
 =========================== */
-.loan-steps {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
 
-.step {
-    flex: 1;
-    min-width: 160px;
+.loan-section {
     background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 16px;
 }
 
-/* ========================
-   Loan Rate Form
-=========================== */
-.rate-form {
-    background: #fff;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 20px;
-    max-width: 500px;
-    margin-top: 0;
-}
-
-.rate-form label {
+.loan-subtitle {
+    color: #dc3545;
+    font-weight: 600;
+    text-transform: capitalize;
     display: block;
-    font-size: 12px;
-    margin-bottom: 4px;
-    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
-.rate-form input,
-.rate-form select {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #bbb;
-    border-radius: 4px;
+.loan-title {
+    font-size: 2rem;
+    font-weight: 700;
 }
+
+.loan-desc {
+    color: #6c757d;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+.loan-block-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.loan-subtitle {
+    color: #dc3545;
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.loan-title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.loan-desc {
+    color: #6c757d;
+    font-size: 0.95rem;
+    margin-bottom: 16px;
+}
+
+.loan-step-wrapper {
+    position: relative;
+    margin-left: 30px;
+    padding-left: 40px;
+}
+
+.loan-step-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 16px;
+    width: 2px;
+    height: 100%;
+    background-color: #dc3545;
+    z-index: 0;
+}
+
+.loan-step {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 40px;
+    z-index: 1;
+}
+
+.step-number {
+    position: relative;
+    z-index: 2;
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    border: 2px solid #dc3545;
+    border-radius: 50%;
+    font-weight: 600;
+    color: #dc3545;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.step-content h6 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.step-content p {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin: 0;
+}
+
+.loan-rate-form {
+    background-color: #dc3545;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.loan-rate-form h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.loan-rate-form .form-control,
+.loan-rate-form .form-select {
+    border: none;
+    border-radius: 4px;
+    height: 45px;
+    font-size: 0.95rem;
+}
+
+.loan-rate-form .form-control::placeholder {
+    color: #999;
+}
+
+.loan-rate-form .btn {
+    font-weight: 600;
+    height: 45px;
+}
+
 
 /* ========================
    Blog Section
 =========================== */
-.blog {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
+
+.blog-section {
+    background: linear-gradient(to bottom, #fbf5ec 0%, #ffffff 100%);
+    padding-top: 60px;
+    padding-bottom: 160px;
+    /* large space below */
 }
 
+.custom-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+.blog-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.blog-subtitle {
+    color: #dc3545;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.blog-title {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.blog-description {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #6c757d;
+    font-size: 0.95rem;
+}
+
+
 .blog-card {
-    flex: 1;
-    min-width: 260px;
-    background: #fff;
-    border: 1px solid #ddd;
+    background-color: #fff;
     border-radius: 8px;
     overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
+    height: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .blog-card img {
     width: 100%;
-    display: block;
+    height: auto;
+    object-fit: cover;
 }
+
 
 .blog-content {
-    padding: 16px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+    padding: 20px;
+    flex-grow: 1;
 }
 
-.blog-content h3 {
-    margin: 8px 0;
+.blog-date {
+    color: #dc3545;
+    font-size: 0.875rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.blog-post-title {
     font-size: 1.1rem;
+    line-height: 1.4;
+    color: #000;
+    margin-bottom: 12px;
+    font-weight: 600;
 }
 
-/* ========================
-   Partners Section
-=========================== */
-.partner {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 30px 0;
+.blog-read-more {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
-.partner img {
-    height: 40px;
-    object-fit: contain;
-    filter: grayscale(50%);
+.blog-read-more:hover {
+    color: #dc3545;
 }
+
 
 /* ========================
    Footer
 =========================== */
-footer {
-    background: #111;
-    color: #eee;
-    padding: 40px 0;
-    font-size: 14px;
-    margin-top: 60px;
+.footer-custom {
+    background-color: #0d0d0d;
+    font-size: 17px;
+    /* Increased base text size */
+    padding-top: 180px;
+    /* More vertical space */
+    padding-bottom: 150px;
 }
 
-.footer-flex {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
+.footer-custom .container {
+    max-width: 1140px;
+    padding-left: 20px;
+    /* reduced side space */
+    padding-right: 20px;
 }
 
-.footer-col {
-    flex: 1;
-    min-width: 180px;
+.footer-custom .footer-link {
+    display: block;
+    color: #ffffff;
+    margin-bottom: 12px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 17px;
+    /* Larger link text */
 }
 
-.footer-col h3 {
-    margin-top: 0;
-    font-size: 16px;
+.footer-custom .footer-link:hover {
+    color: #e50914;
 }
 
-.social {
+.footer-custom .social-icons {
     display: flex;
     gap: 8px;
-    list-style: none;
-    padding: 0;
-    margin: 6px 0;
+    /* tighter spacing */
+    margin-left: 10px;
 }
 
-.social li {
-    display: inline;
+.footer-custom .social-icons a {
+    color: #ffffff;
+    font-size: 22px;
+    transition: color 0.3s ease;
 }
 
-.small {
-    font-size: 12px;
-    color: #aaa;
-    margin-top: 12px;
+.footer-custom .social-icons a:hover {
+    color: #e50914;
+}
+
+.footer-custom .icon-red {
+    color: #e50914;
+    font-size: 18px;
+    margin-top: 2px;
+}
+
+.footer-custom .footer-bottom {
+    margin-top: 100px;
+    padding-top: 60px;
+    border-top: 1px solid #222;
+    /* dark slim line */
+}
+
+.footer-custom .footer-heading {
+    font-size: 22px;
+    /* Slightly larger headings */
+    font-weight: 700;
+    margin-bottom: 24px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #333;
+    /* Slim underline */
+}
+
+.footer-custom p,
+.footer-custom span,
+.footer-custom .footer-bottom p {
+    font-size: 16px;
+    line-height: 1.8;
 }

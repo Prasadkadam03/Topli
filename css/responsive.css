@@ -83,3 +83,63 @@
     padding-bottom: 20px;
   }
 }
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 991.98px) {
+    .blog-section {
+        padding-bottom: 120px;
+    }
+
+    .blog-spacer {
+        height: 10px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .blog-section {
+        padding-top: 40px;
+        padding-bottom: 100px;
+    }
+
+    .blog-title {
+        font-size: 1.5rem;
+    }
+
+    .blog-description {
+        font-size: 0.9rem;
+    }
+
+    .blog-post-title {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .step-number {
+        left: -38px;
+    }
+
+    .loan-step-wrapper {
+        padding-left: 25px;
+        margin-left: 15px;
+    }
+
+    .loan-rate-form {
+        padding: 20px;
+    }
+
+    .loan-title {
+        font-size: 1.6rem;
+    }
+
+    .loan-rate-form h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .loan-block-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
