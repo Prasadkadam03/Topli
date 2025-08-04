@@ -13,104 +13,200 @@
     <link rel="stylesheet" href="css/responsive.css">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-..." crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+
 </head>
 
 <body>
 
     <!-- ================================
-         Navbar Section
-    ==================================== -->
-    <section class="container-fluid">
-        <div class="navbar">
-            <div class="logo">
-                <img src="assets/img/logo.png" alt="Topli Logo" style="width: 100%; height: auto;" />
+     Navbar Section (Improved Layout)
+==================================== -->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm">
+        <div class="w-100 d-flex py-2 justify-content-between align-items-center px-3">
+
+            <!-- Logo -->
+            <div class=" navbar-brand" href="#">
+                <img src="assets/img/logo.png" alt="Topli Logo" height="40">
             </div>
-            <div class="nav">
-                <div class="nav-item"><a href="#">Home ▾</a></div>
-                <div class="nav-item"><a href="/about">Pages ▾</a></div>
-                <div class="nav-item"><a href="#">Funding</a></div>
-                <div class="nav-item"><a href="#">Loans</a></div>
-                <div class="nav-item"><a href="#">Blog</a></div>
-                <div class="nav-item"><a href="#">Contact</a></div>
-                <div class="nav-item"><i class="fas fa-search"></i></div>
-                <div class="nav-item"><button class="btn-primary">Apply Now</button></div>
+
+            <div class="d-flex justify-content-end align-items-center ">
+                <!-- Center Nav Links -->
+                <div class=" md-block collapse navbar-collapse " id="topliNavbar">
+                    <ul class="navbar-nav gap-3">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fw-bold text-dark" href="#"
+                                data-bs-toggle="dropdown">Home</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Home One</a></li>
+                                <li><a class="dropdown-item" href="#">Home Two</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fw-bold text-dark" href="#"
+                                data-bs-toggle="dropdown">Pages</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item fw-bold text-dark" href="#">About</a></li>
+                                <li><a class="dropdown-item fw-bold text-dark" href="#">Team</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link fw-bold text-dark" href="#">Services</a></li>
+                        <li class="nav-item"><a class="nav-link fw-bold text-dark" href="#">Funding</a></li>
+                        <li class="nav-item"><a class="nav-link fw-bold text-dark" href="#">Loans</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fw-bold text-dark" href="#"
+                                data-bs-toggle="dropdown">Blog</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item fw-bold text-dark" href="#">Blog List</a></li>
+                                <li><a class="dropdown-item fw-bold text-dark" href="#">Blog Single</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link fw-bold text-dark" href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Right Section -->
+                <div class=" d-none d-md-flex align-items-center gap-3">
+
+                    <!-- Search Icon -->
+                    <button class="btn btn-link ps-1 text-dark">
+                        <i class="fas fa-search fs-5"></i>
+                    </button>
+
+                    <!-- Call Info -->
+                    <div class="d-flex align-items-center border-start px-3 gap-2">
+                        <i class="fas fa-phone text-danger"></i>
+                        <div class="d-flex flex-column ">
+                            <span class="text-muted">Call Now</span>
+                            <span class="fw-semibold text-dark">+1 (514) 312-5678</span>
+                        </div>
+                    </div>
+
+                    <!-- Apply Now Button -->
+                </div>
+                <a href="#" class="d-none d-md-flex btn-primary fw-semibold">Apply Now</a>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <!-- ================================
+     Hero Section
+    ==================================== -->
+    <section class="py-5 bg-cover"
+        style="background-image: url('assets/img/main-banner3.jpg'); background-size:cover; background-position: center center; background-repeat: no-repeat; background-attachment: unset; height: 110vh;">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left: Text Content -->
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h1 class="display-4 fw-semibold mb-4">
+                        The funds have helped us move your business forward
+                    </h1>
+                    <p class="mb-4 text-muted">
+                        Loans are advantageous as a relatively inexpensive way of borrowing money. Start or grow your
+                        own business.
+                    </p>
+                    <a href="#" class="btn-primary fe-semibold">Apply Now</a>
+                </div>
+
+                <!-- Right: Image -->
+                <div class="col-lg-6 text-center">
+                    <img src="assets/img/vector.png" class="img-fluid" alt="Hero illustration" style="max-width: 110%;">
+                </div>
             </div>
         </div>
     </section>
-
-    <!-- ================================
-         Hero Section
-    ==================================== -->
-    <div class="hero" style="background-image: url('assets/img/main-banner3.jpg');">
-        <div class="hero-text">
-            <h1>The funds have helped us move your business forward</h1>
-            <p>Loans are advantageous as a relatively inexpensive way of borrowing money. Start or grow your own business.</p>
-            <button class="btn-primary">Apply Now</button>
-        </div>
-        <div class="hero-img">
-            <img src="assets/img/vector.png" alt="hero image" />
-        </div>
-    </div>
 
     <!-- ================================
          Approvals Section
     ==================================== -->
     <div class="container">
-        <div class="approvals">
-            <div class="approval-card">
-                <div>🚀</div>
+        <div class="row g-0 text-center approvals rounded overflow-hidden">
+            <div class="col-12 col-md-4 border-end-md custom-border-dark p-4 approval-card">
+                <i class="fas fa-handshake"></i>
                 <div><strong>Quick</strong><br>Loan approvals</div>
             </div>
-            <div class="approval-card">
-                <div>😊</div>
-                <div><strong>20,000</strong><br>Customer satisfaction</div>
+            <div class="col-12 col-md-4 border-end-md custom-border-dark p-4 approval-card">
+                <i class="fas fa-users"></i>
+                <div><strong>20,000</strong><br>Customers satisfaction</div>
             </div>
-            <div class="approval-card">
-                <div>📄</div>
+            <div class="col-12 col-md-4 p-4 approval-card">
+                <i class="fas fa-file-invoice-dollar"></i>
                 <div><strong>No prepayment</strong><br>Or hidden fees</div>
             </div>
         </div>
     </div>
 
+
+
+
     <!-- ================================
          Why Choose Us Section
     ==================================== -->
-    <section class="section" style="background: var(--bg);">
+    <section class="section py-5 my-5">
         <div class="container">
-            <div class="section-title">
-                <span>Transparent process</span>
-                <h2>Why people choose us</h2>
-                <p>Simple, fast, and reliable loan services with clear terms.</p>
+            <div class="section-title text-center">
+                <span class="text-danger fw-medium">Transparent process</span>
+                <h2 class="fw-bold">Why people choose us</h2>
+                <p class="text-muted mx-auto w-50">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                </p>
             </div>
+
+
             <div class="features">
-                <div class="feature"><h3>Guarantee</h3><p>Reliable support and clear terms.</p></div>
-                <div class="feature"><h3>Speed</h3><p>Quick decisions and funding.</p></div>
-                <div class="feature"><h3>Reliability</h3><p>Trusted by thousands over years.</p></div>
-                <div class="feature"><h3>Experience</h3><p>Decades in financing and lending.</p></div>
+                <div class="feature">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Guarantee</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Speed</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-thumbs-up"></i>
+                    <h3>Reliability</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Experience</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
             </div>
         </div>
     </section>
+
+
 
     <!-- ================================
          About Section
     ==================================== -->
     <section class="section">
-        <div class="container">
+        <div class="px-3">
             <div class="about">
                 <div><img src="assets/img/image4.png" alt="About us image"></div>
                 <div>
-                    <span>About company</span>
+                    <span class="text-danger">About company</span>
                     <h3>We have been working very efficiently with loan and funding for 25 years.</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore quidem, eos culpa similique aut
+                        mollitia, sint, eligendi nemo corporis quia minima maiores! Exercitationem quaerat sapiente
+                        laboriosam tempora amet officiis iste?</p>
                     <strong>In business, we focus on 3 things.</strong>
                     <ul>
-                        <li>Useful info</li>
-                        <li>Reliability</li>
-                        <li>Innovation</li>
+                        <li><i class="fa-solid fa-check pe-2" style="color: #f90b0b;"></i>Useful info</li>
+                        <li><i class="fa-solid fa-check pe-2" style="color: #f90b0b;"></i>Reliability</li>
+                        <li><i class="fa-solid fa-check pe-2" style="color: #f90b0b;"></i>Innovation</li>
                     </ul>
                     <button class="btn-primary">View more</button>
                 </div>
@@ -121,16 +217,35 @@
     <!-- ================================
          Fun Facts Section
     ==================================== -->
-    <section class="section" style="background: #fafafa;">
+    <!-- ================================
+     Fun Facts Section
+==================================== -->
+    <section class="section fun-facts-section" style="background: #f6f5f1;">
         <div class="container">
             <div class="fun-facts">
-                <div class="fact"><div class="counter" data-target="1984">0</div><div>Projects Done</div></div>
-                <div class="fact"><div class="counter" data-target="10000">0</div><div>Loans Increase</div></div>
-                <div class="fact"><div><span class="counter" data-target="100">0</span>%</div><div>Happy Clients</div></div>
-                <div class="fact"><div class="counter" data-target="25">0</div><div>Awards Won</div></div>
+                <div class="fact">
+                    <div class="counter">0</div>
+                    <div>Projects Done</div>
+                </div>
+                <div class="divider"></div>
+                <div class="fact">
+                    <div class="counter">0</div>
+                    <div>Loans Increase</div>
+                </div>
+                <div class="divider"></div>
+                <div class="fact">
+                    <div><span class="counter">0</span>%</div>
+                    <div>Happy Clients</div>
+                </div>
+                <div class="divider"></div>
+                <div class="fact">
+                    <div class="counter">0</div>
+                    <div>Awards Won</div>
+                </div>
             </div>
         </div>
     </section>
+
 
     <!-- ================================
          Services Tabs Section
@@ -152,12 +267,30 @@
                 </div>
                 <div class="tab-content" id="tab-content">
                     <!-- Individual tab contents -->
-                    <div data-content="agricultural"><h3>About Agricultural loan</h3><p>Financing for new home, improvement, renovation, land purchase.</p></div>
-                    <div data-content="personal" style="display:none;"><h3>About Personal loan</h3><p>Flexible personal financing for your immediate needs.</p></div>
-                    <div data-content="business" style="display:none;"><h3>About Business loan</h3><p>Grow your business with tailored loan solutions.</p></div>
-                    <div data-content="education" style="display:none;"><h3>About Education loan</h3><p>Invest in knowledge with easy repayment options.</p></div>
-                    <div data-content="home" style="display:none;"><h3>About House loan</h3><p>Make your dream home a reality.</p></div>
-                    <div data-content="payday" style="display:none;"><h3>About Payday loan</h3><p>Quick access to cash for short-term needs.</p></div>
+                    <div data-content="agricultural">
+                        <h3>About Agricultural loan</h3>
+                        <p>Financing for new home, improvement, renovation, land purchase.</p>
+                    </div>
+                    <div data-content="personal" style="display:none;">
+                        <h3>About Personal loan</h3>
+                        <p>Flexible personal financing for your immediate needs.</p>
+                    </div>
+                    <div data-content="business" style="display:none;">
+                        <h3>About Business loan</h3>
+                        <p>Grow your business with tailored loan solutions.</p>
+                    </div>
+                    <div data-content="education" style="display:none;">
+                        <h3>About Education loan</h3>
+                        <p>Invest in knowledge with easy repayment options.</p>
+                    </div>
+                    <div data-content="home" style="display:none;">
+                        <h3>About House loan</h3>
+                        <p>Make your dream home a reality.</p>
+                    </div>
+                    <div data-content="payday" style="display:none;">
+                        <h3>About Payday loan</h3>
+                        <p>Quick access to cash for short-term needs.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -242,10 +375,22 @@
                     <h2>You deserve a better business loan</h2>
                 </div>
                 <div class="loan-steps">
-                    <div class="step"><strong>1</strong><h4>Apply in 10 minutes</h4><p>Quick application.</p></div>
-                    <div class="step"><strong>2</strong><h4>Hear from us in 1 hour</h4><p>Fast response.</p></div>
-                    <div class="step"><strong>3</strong><h4>Decision in 24 hours</h4><p>Quick approval.</p></div>
-                    <div class="step"><strong>4</strong><h4>Your loan is funded</h4><p>Receive funds quickly.</p></div>
+                    <div class="step"><strong>1</strong>
+                        <h4>Apply in 10 minutes</h4>
+                        <p>Quick application.</p>
+                    </div>
+                    <div class="step"><strong>2</strong>
+                        <h4>Hear from us in 1 hour</h4>
+                        <p>Fast response.</p>
+                    </div>
+                    <div class="step"><strong>3</strong>
+                        <h4>Decision in 24 hours</h4>
+                        <p>Quick approval.</p>
+                    </div>
+                    <div class="step"><strong>4</strong>
+                        <h4>Your loan is funded</h4>
+                        <p>Receive funds quickly.</p>
+                    </div>
                 </div>
                 <button class="btn-primary">Apply Now</button>
             </div>
@@ -392,4 +537,5 @@
     ==================================== -->
     <script src="js/script.js"></script>
 </body>
+
 </html>

@@ -1,4 +1,3 @@
-
 @media (max-width:900px) {
     .hero {
         flex-direction: column;
@@ -15,15 +14,21 @@
     .solution {
         flex-direction: column;
     }
+
+    .logo {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
 }
 
 
 
 /* For smaller screens, use full-width without padding */
 @media (min-width: 1500px) {
+
     .navbar,
     .body,
-    .container,
     .section,
     .hero,
     .approvals,
@@ -34,8 +39,8 @@
     .testimonials,
     .loan-steps {
         max-width: 100%;
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 200px !important;
+        padding-right: 200px !important;
     }
 }
 
@@ -59,4 +64,22 @@
     .nav-item {
         margin: 8px 0;
     }
+}
+
+@media (min-width: 992px) {
+    .display-5 {
+        font-size: 3.25rem;
+    }
+}
+
+
+
+@media (min-width: 768px) {
+  .custom-border-dark {
+    border-right: 1px solid #222 !important;
+  }
+  .approvals{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
