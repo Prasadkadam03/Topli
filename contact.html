@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Topli Basic Static</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- ================================
+         CSS Stylesheets & Libraries
+    ==================================== -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+
+</head>
+
+<body>
+
+    <!-- ================================
+     Navbar Section (Improved Layout)
+==================================== -->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm">
+        <div class=" d-flex py-2 justify-content-between align-items-center px-3">
+
+            <!-- Logo -->
+            <div class=" navbar-brand" href="#">
+                <img src="assets/img/logo.png" alt="Topli Logo" height="40" width="100vh">
+            </div>
+
+            <div class="d-flex justify-content-end align-items-center ">
+                <!-- Center Nav Links -->
+                <div class=" md-block collapse navbar-collapse " id="topliNavbar">
+                    <ul class="navbar-nav gap-3">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fw-bold text-dark" href="#"
+                                data-bs-toggle="dropdown">Home</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/index.html">Home One</a></li>
+                                <li><a class="dropdown-item" href="/index.html">Home Two</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fw-bold text-dark" href="#"
+                                data-bs-toggle="dropdown">Pages</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item fw-bold text-dark" href="/about.html">About</a></li>
+                                <li><a class="dropdown-item fw-bold text-dark" href="/loan.html">Loan</a></li>
+                                <li><a class="dropdown-item fw-bold text-dark" href="#">Team</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item"><a class="nav-link fw-bold text-dark" href="#">Services</a></li>
+                        <li class="nav-item"><a class="nav-link fw-bold text-dark" href="#">Funding</a></li>
+                        <li class="nav-item"><a class="nav-link fw-bold text-dark" href="/loan.html">Loans</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fw-bold text-dark" href="#"
+                                data-bs-toggle="dropdown">Blog</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item fw-bold text-dark" href="#">Blog List</a></li>
+                                <li><a class="dropdown-item fw-bold text-dark" href="#">Blog Single</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link fw-bold text-dark" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right Section -->
+                <div class=" d-none d-md-flex align-items-center gap-3">
+
+                    <!-- Search Icon -->
+                    <button class="btn btn-link ps-1 text-dark">
+                        <i class="fas fa-search fs-5"></i>
+                    </button>
+
+                    <!-- Call Info -->
+                    <div class="d-flex align-items-center border-start px-3 gap-2">
+                        <i class="fas fa-phone text-danger"></i>
+                        <div class="d-flex flex-column ">
+                            <span class="text-muted">Call Now</span>
+                            <span class="fw-semibold text-dark">+1 (514) 312-5678</span>
+                        </div>
+                    </div>
+
+                    <!-- Apply Now Button -->
+                </div>
+                <a href="#" class="d-none d-md-flex btn-primary fw-semibold">Apply Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <div style="background: url('assets/img/bg-9.jpg') no-repeat center  fixed; background-size: cover;  background-color: rgba(255, 255, 255, 0.6);  /* semi-transparent white */
+backdrop-filter: blur(10px);-webkit-backdrop-filter: blur(10px); ">
+            <!-- Page Title -->
+            <section class="page-title-area text-center text-white" style="  padding: 100px 0; ">
+                <div class="container">
+                    <h2 class="text-dark fs-1 bold">Contact</h2>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center bg-transparent p-0">
+                            <li class="breadcrumb-item"><a href="/" class="text-danger bold">Home</a></li>
+                            <li class="breadcrumb-item active text-muted" aria-current="page">Contact</li>
+                        </ol>
+                    </nav>
+                </div>
+            </section>
+        </div>
+
+        <!-- Contact Section -->
+        <section class="py-5">
+            <div class="container">
+                <!-- Intro -->
+                <div class="text-center mb-5">
+                    <small class="text-danger fw-semibold">Let's discuss</small>
+                    <h2 class="fw-bold mt-2">Whatever question you have,<br>please feel free to ask.</h2>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Contact Form -->
+                    <div class="col-lg-8">
+                        <h5 class="fw-semibold mb-4">Write Us</h5>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label"
+                                        style="color: #606060;     font-weight: 500; font-size: 16px;">Name</label>
+                                    <input type="text" id="name" class="form-control" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" id="email" class="form-control" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <input type="text" id="subject" class="form-control">
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea id="message" rows="5" class="form-control"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn-primary">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+
+                    <!-- Contact Details -->
+                    <div class="col-lg-4">
+                        <h5 class="fw-semibold mb-4">Contact Topli</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-4 d-flex">
+                                <i class="fa-solid fa-clock text-danger fs-5 me-3"></i>
+                                <div>
+                                    <strong class="d-block mb-2">Working Hours</strong>
+                                    <table class="table table-borderless table-sm mb-0">
+                                        <tbody>
+                                            <tr>
+                                                <td class="pe-3 text-muted">Mon – Thu:</td>
+                                                <td class="text-muted">8:00 AM – 5:00 PM</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="pe-3 text-muted">Fri – Sat:</td>
+                                                <td class="text-muted">8:00 AM – 3:00 PM</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="pe-3 text-muted">Sun:</td>
+                                                <td class="text-muted">CLOSED</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+
+                            <li class="mb-4 d-flex">
+                                <i class="fa-solid fa-location-dot text-danger fs-5 me-3"></i>
+                                <div>
+                                    <strong>Address</strong><br>
+                                    <span class="text-muted">6890 Blvd, The Bronx, NY 1058 New York, USA</span>
+                                </div>
+                            </li>
+                            <li class="mb-4 d-flex">
+                                <i class="fa-solid fa-phone text-danger fs-5 me-3"></i>
+                                <div>
+                                    <strong>Phone</strong><br>
+                                    <span class="text-muted">+1 (514) 312-5678</span><br>
+                                    <span class="text-muted">+1 (514) 312-6688</span>
+                                </div>
+                            </li>
+                            <li class="d-flex">
+                                <i class="fa-solid fa-envelope text-danger fs-5 me-3"></i>
+                                <div>
+                                    <strong>Email</strong><br>
+                                    <span class="text-muted">hello@topli.com</span><br>
+                                    <span class="text-muted">Skype: example</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="map-section">
+            <div class="container-fluid px-0">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.11976397304603!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1594738801148!5m2!1sen!2sbd"
+                    width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0">
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <!-- ================================
+         Footer Section
+    ==================================== -->
+
+    <!-- Boxicons (Icons) -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <footer class="footer-custom text-white pt-5 pb-5 mt-5">
+        <div class="container">
+            <div class="row gy-4">
+
+                <!-- Column 1: Logo & About -->
+                <div class="col-lg-3 col-md-6">
+                    <img src="assets/img/logo2.png" alt="Topli Logo" class="mb-3" style="width: 120px;">
+                    <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="d-flex align-items-center mt-3">
+                        <strong class="me-2">Follow us:</strong>
+                        <div class="social-icons">
+                            <a href="#"><i class='bx bxl-twitter'></i></a>
+                            <a href="#"><i class='bx bxl-instagram'></i></a>
+                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                            <a href="#"><i class='bx bxl-linkedin'></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3 footer-heading">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">About</a></li>
+                        <li><a href="#" class="footer-link">Our Performance</a></li>
+                        <li><a href="#" class="footer-link">Help (FAQ)</a></li>
+                        <li><a href="#" class="footer-link">Blog</a></li>
+                        <li><a href="#" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Other Resources -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3 footer-heading">Other Resources</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">Support</a></li>
+                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="#" class="footer-link">Terms of Service</a></li>
+                        <li><a href="#" class="footer-link">Business Loans</a></li>
+                        <li><a href="#" class="footer-link">Loan Services</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3 footer-heading">Contact Us</h5>
+                    <div class="d-flex mb-3">
+                        <i class='bx bxs-map me-2 icon-red'></i>
+                        <span>6890 Blvd, The Bronx, NY 1058 New York, USA</span>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <i class='bx bxs-envelope me-2 icon-red'></i>
+                        <div>
+                            <div>hello@topli.com</div>
+                            <div>Skype: example</div>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <i class='bx bxs-phone-call me-2 icon-red'></i>
+                        <div>
+                            <div>+1 (514) 312-5678</div>
+                            <div>+1 (514) 312-6688</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="text-center mt-5 pt-5 border-top border-secondary   ">
+            <p class="mb-0 small">© Topli is Proudly Owned by <a href="https://envytheme.com" target="_blank"
+                    class="fw-bold text-white text-decoration-none">EnvyTheme</a></p>
+        </div>
+
+        <!-- Back to Top -->
+        <div class="position-fixed bottom-0 end-0 m-4 bg-white text-dark rounded-circle d-flex align-items-center justify-content-center"
+            style="width: 48px; height: 48px; cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,0.3);"
+            onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+            <i class='bx bx-chevron-up fs-4'></i>
+        </div>
+    </footer>
+
+    <!-- ================================
+         Scripts
+    ==================================== -->
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
